@@ -5,15 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/margem_padrao"
+    android:layout_margin="@dimen/margem_padrao"
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/rvItens"
+        app:layout_constraintBottom_toTopOf="@+id/tvQtd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:listitem="@layout/list_item_registro_peso"/>
 
-        tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/tvQtd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Estou aqui"/>
 
 <com.google.android.material.floatingactionbutton.FloatingActionButton
     android:layout_width="wrap_content"
@@ -22,7 +36,7 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     android:src="@drawable/ic_baseline_add_24"
-    />
+    android:contentDescription="@string/adicionar_nova_activity"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

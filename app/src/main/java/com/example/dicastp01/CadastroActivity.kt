@@ -17,9 +17,6 @@ class CadastroActivity : AppCompatActivity() {
         binding = ActivityCadastroBinding.inflate(layoutInflater)
 
         inicializarDados()
-
-
-
     }
 
     private fun configurarButtonListener(){
@@ -29,29 +26,26 @@ class CadastroActivity : AppCompatActivity() {
     }
 
 
+    private fun configurarRG() {
 
-    private fun configurarRG(){
-
-        binding.rgClassificacaoIdade.setOnCheckedChangeListener{_ , checkedId ->
-            when(checkedId){
+        binding.rgClassificacaoIdade.setOnCheckedChangeListener { _, checkedId ->
+            when (checkedId) {
                 R.id.rbAdulto -> {
-                    Toast.makeText(this,"Adulto", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Adulto", Toast.LENGTH_LONG).show()
                     Log.d("PUCMINAS", "Adulto")
                 }
                 R.id.rbIdoso -> {
-                    Toast.makeText(this,"Idoso", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Idoso", Toast.LENGTH_LONG).show()
                     Log.d("PUCMINAS", "Idoso")
                 }
                 else -> {
-                    Toast.makeText(this,"Nenhum elemento selecionado", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Nenhum elemento selecionado", Toast.LENGTH_LONG).show()
                     Log.d("PUCMINAS", "Nenhum Elemento Selecionado")
                 }
             }
         }
 
     }
-
-
 
     private fun inicializarDados() {
         val resultado = intent.getStringExtra(MainActivity.TAG)

@@ -4,4 +4,5 @@
     <string name="lblAdulto">Adulto</string>
     <string name="lblIdoso">Idoso</string>
     <string name="btn_enviar_lbl">Enviar</string>
+    <string name="adicionar_nova_activity">Adicionar</string>
 </resources>

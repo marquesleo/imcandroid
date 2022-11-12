@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/margem_padrao"
     tools:context=".CadastroActivity">
 
     <EditText
         android:id="@+id/etExemplo"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:hint="@string/nome"
+        android:hint="Peso"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -53,6 +55,7 @@
         android:id="@+id/tvResultado"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:textSize="40sp"
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
