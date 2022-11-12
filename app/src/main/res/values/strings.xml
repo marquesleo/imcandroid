@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DicasTP01</string>
+    <string name="nome">nome</string>
+    <string name="lblAdulto">Adulto</string>
+    <string name="lblIdoso">Idoso</string>
+    <string name="btn_enviar_lbl">Enviar</string>
+</resources>
