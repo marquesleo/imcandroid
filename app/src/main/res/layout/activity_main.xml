@@ -17,6 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
+        android:layout_marginBottom="@dimen/espaco_entre_itens"
         tools:listitem="@layout/list_item_registro_peso"/>
 
 
