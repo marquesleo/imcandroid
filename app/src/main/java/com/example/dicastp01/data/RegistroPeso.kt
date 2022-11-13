@@ -1,7 +1,11 @@
 package com.example.dicastp01.data
 
-public data class RegistroPeso {
-    val peso: Double = 0.0
-    val faixaEtaria: Int = 0
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-}
+@Parcelize
+data class RegistroPeso (
+    val peso: Double,
+    val faixaEtaria:String
+
+): Parcelable
